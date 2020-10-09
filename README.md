@@ -1,5 +1,8 @@
 # GAMMORA REPOSITORY
+
 GAMMORA : GAte Monte carlo MOdel for Radiothapy Applications
+
+Coming soon.... (winter 2020)
 
 A full Varian TrueBeam Model for [Gate v9.0](https://github.com/OpenGATE/Gate) with the following features:
 - full geometry (MLC, jaws...)
@@ -8,7 +11,7 @@ A full Varian TrueBeam Model for [Gate v9.0](https://github.com/OpenGATE/Gate) w
 - absolute dose conversion
 
 
-Coming soon....
+
 
 
 
