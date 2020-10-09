@@ -1,6 +1,6 @@
 # GAMMORA REPOSITORY
 
-GAMMORA : GAte Monte carlo MOdel for Radiothapy Applications
+**GAMMORA** : **GA**te **M**onte-Carlo **MO**del for **RA**diotherapy
 
 Coming soon.... (winter 2020)
 
@@ -18,4 +18,6 @@ A full Varian TrueBeam Model for [Gate v9.0](https://github.com/OpenGATE/Gate) w
 
 Authors: Jeremy Leste, Maxime Chauvin, Tony Younes, Sara Beilla, Luc Simon
 
-CRCT, Toulouse, France
+[CRCT](https://www.crct-inserm.fr/), Toulouse, France
+
+[IUCT-Oncopole](https://www.iuct-oncopole.fr/), Toulouse, France
