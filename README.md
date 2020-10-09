@@ -5,9 +5,9 @@
 Coming soon.... (winter 2020)
 
 A full Varian TrueBeam Model for [Gate v9.0](https://github.com/OpenGATE/Gate) with the following features:
-- full geometry (MLC, jaws...)
 - Conversion DICOM RT PLAN to GATE macros (including dynamic plans such as VMAT, DCA...)
 - open-source particle gun corresponding to the real machine ('GAN' neural network trained on the data furnished by [myVarian](https://www.myvarian.com/), created using [GAGA](https://github.com/dsarrut/gaga))
+- full geometry (MLC, jaws...). As the real geometry is confidential, the proposed model is slightly different than the real machine (but same dosmetric properties) 
 - absolute dose conversion
 
 
