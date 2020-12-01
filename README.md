@@ -25,4 +25,5 @@ Authors: [Jeremy Leste](https://github.com/jeremyLeste), Maxime Chauvin, Tony Yo
 [IUCT-Oncopole](https://www.iuct-oncopole.fr/), Toulouse, France
 
 
-This repository is the stable version of GAMMORA. Please find [here](https://github.com/jeremyLeste/GAMMORA) the developing version.  
+This repository is the stable version of GAMMORA. 
+{%  Please find [here](https://github.com/jeremyLeste/GAMMORA) the developing version.   %}
