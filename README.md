@@ -18,8 +18,11 @@ A full Varian TrueBeam Model for [Gate v9.0](https://github.com/OpenGATE/Gate) w
 
 
 
-Authors: Jeremy Leste, Maxime Chauvin, Tony Younes, Sara Beilla, Luc Simon
+Authors: [Jeremy Leste](https://github.com/jeremyLeste), Maxime Chauvin, Tony Younes, Sara Beilla, Luc Simon
 
 [CRCT](https://www.crct-inserm.fr/), Toulouse, France
 
 [IUCT-Oncopole](https://www.iuct-oncopole.fr/), Toulouse, France
+
+
+This repository is the stable version of GAMMORA. Please find [here](https://github.com/jeremyLeste/GAMMORA) the developing version.  
