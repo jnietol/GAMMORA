@@ -26,4 +26,4 @@ Authors: [Jeremy Leste](https://github.com/jeremyLeste), Maxime Chauvin, Tony Yo
 
 
 This repository is the stable version of GAMMORA. 
-{%  Please find [here](https://github.com/jeremyLeste/GAMMORA) the developing version.   %}
+[//]: <> (This is also a commentPlease find [here](https://github.com/jeremyLeste/GAMMORA) the developing version. )
