@@ -4,7 +4,7 @@
 
 Already available: the pre trained GAN that generates TrueBeam photons (6FF, 6FFF, 10FF and 10FFF)
 
-Coming soon (winter 2020):
+Coming soon (feb 2021):
 
 A full Varian TrueBeam Model for [Gate v9.0](https://github.com/OpenGATE/Gate) with the following features:
 - conversion DICOM RT PLAN to GATE macros (including dynamic plans such as VMAT, DCA...)
