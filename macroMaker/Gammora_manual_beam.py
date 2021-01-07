@@ -384,10 +384,10 @@ class GammoraManualBeam(Gammora_beam.GammoraBeam):
                 Gammora_print._title2("Source : "+ str(self._get_source()))
             elif config['SOURCE'] == '0':
                 self._set_source(bool(int(config['SOURCE'])))
-                Gammora_print._title2("Source : " + self._get_source())
+                Gammora_print._title2("Source : " + str(self._get_source()))
             else:  # iaea or gaga
                 self._set_source(True)
-                Gammora_print._title2("Source : "+self._get_source())
+                Gammora_print._title2("Source : "+  str(self._get_source()))
 # + Source Type            
             if self._get_source() == True:
                 if config['SOURCE'] == 'gaga':
@@ -444,9 +444,12 @@ class GammoraManualBeam(Gammora_beam.GammoraBeam):
                     Gammora_print._title2("Number of particle (including recycling seeting) : "+str(self._get_nb_part_tot_varian()[0]*self._get_recycling()) + " ("+str(self._get_nb_part_tot_varian()[1])+" % Varian PHSP used)")
                                        
                 elif config['NB_PART'] == 'auto' and self._get_source_gaga() == True:
+                    self._set_manual_nb_part(False)  
                     self._set_gaga_nb_part(config_default_scratch['NB_PART'])
+
                     Gammora_print._title2("Number of particle (including recycling seeting) : "+str(config_default_scratch['NB_PART']))
                 elif config['NB_PART'] != 'auto' and self._get_source_gaga() == True:
+                    self._set_manual_nb_part(True)  
                     self._set_gaga_nb_part(int(config['NB_PART']))
                     Gammora_print._title2("Number of particle (including recycling seeting) : "+str(self._get_gaga_nb_part()))
 
@@ -574,20 +577,27 @@ class GammoraManualBeam(Gammora_beam.GammoraBeam):
 
 # + Patient Actor Size         
             if self._get_patient_actor() == True:
-                if config['PATIENT_ACTOR'].endswith('.mac'):
+                if config['PATIENT_ACTOR'].endswith('.mac') and config['PATIENT_ACTOR'] != 'dose_actor.mac':
                     Gammora_print._title2("Patient actor size defined in : " + str(config['PATIENT_ACTOR']))
                     Gammora_print._title2("Patient actor size defined in : " + str(config['PATIENT_ACTOR']))
                 else:
                     if config['PATIENT_ACTOR_SIZE'] == 'auto':
                         self._set_patient_actor_size([float(val) for val in list(config_default_scratch['PATIENT_ACTOR_SIZE'])])
+                        Gammora_print._title2("Patient actor size (from Dicom RT dose) : " + str(self._get_patient_actor_size()) + " (x,y,z)")
+
                     else:
-                        self._set_patient_actor_size([float(val) for val in list(config['PATIENT_ACTOR_SIZE'].split())])       
+                        self._set_patient_actor_size([float(val) for val in list(config['PATIENT_ACTOR_SIZE'].split())])
+                        Gammora_print._title2("Patient actor size (x,y,z) : " + str(self._get_patient_actor_size()))
+      
 
 # + Patient Actor Resolution                  
                     if config['PATIENT_ACTOR_RESOLUTION'] == 'auto':
                         self._set_patient_actor_resolution([int(val) for val in list(config_default_scratch['PATIENT_ACTOR_RESOLUTION'])])
+                        Gammora_print._title2("Patient actor resolution (from Dicom RT dose) : " + str(self._get_patient_actor_resolution())+" (x,y,z)")
+
                     else:
                         self._set_patient_actor_resolution([int(val) for val in list(config['PATIENT_ACTOR_RESOLUTION'].split())])
+                        Gammora_print._title2("Patient actor resolution (from Dicom RT dose) : " + str(self._get_patient_actor_resolution()))
                     
                     Gammora_print._title2("Patient actor size : " + str(self._get_patient_actor_size()) + " (x,y,z)")
                     Gammora_print._title2("Patient actor resolution : " + str(self._get_patient_actor_resolution()) + " (x,y,z)")

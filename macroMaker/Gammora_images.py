@@ -28,8 +28,7 @@ class GammoraCT():
         new_origin_original.append(ct.GetOrigin()[1]*-1)
         new_origin_original.append(ct.GetOrigin()[2]*-1)   
         ct.SetOrigin(new_origin_original)
-        print('ORIGINE : ', ct.GetOrigin())
-
+        
         self._write_original_mhd(ct)
 
         # for rotation of image in Gate reference frame

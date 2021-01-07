@@ -146,8 +146,8 @@ auto
 # auto or 1 = default patient actor:  utils/mac/actor/dose_actor.mac
 # for your own actor definition  <my_actor>.mac" (file must be in utils/mac/actor/) 
 =PATIENT_ACTOR=
-dose_actor.mac
-#auto
+auto
+#dose_actor.mac
 #dose_actor_octa_thin.mac
 #dose_actor_octa.mac
 #dose_abs_photon2.mac
