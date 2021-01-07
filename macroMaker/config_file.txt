@@ -78,7 +78,7 @@ auto
 # Gantry stop: choose X for static field. 
 # For arcs, set the stop angle (float value in deg)  [0 - 360] ; auto
 =GANTRY_STOP=
-auto
+X
 
 # Set rotation direction for arcs. 0 clockwise. 1 counter clockwise ; auto
 # Tag without consequences on the results except if the target moves
@@ -172,7 +172,7 @@ auto
 # sources are in utils/source/
 # if the user has access to myVarian IAEAphsp v2 files, place them in /utils/source/ 
 =SOURCE=
-gaga
+auto
 
 # Set "auto" ; "6X" ; "10X"; "6FFF" ; "10FFF"
 =ENERGY=
@@ -180,7 +180,7 @@ gaga
 
 # Set "auto" or total number of native particles to simulate 
 =NB_PART=
-20000
+200
 
 # Set "auto" or recycling value (positive int)
 # Set the number of recyling for patient simulation

@@ -384,10 +384,10 @@ class GammoraManualBeam(Gammora_beam.GammoraBeam):
                 Gammora_print._title2("Source : "+ str(self._get_source()))
             elif config['SOURCE'] == '0':
                 self._set_source(bool(int(config['SOURCE'])))
-                Gammora_print._title2("Source : " + str(self._get_source()))
+                Gammora_print._title2("Source : " + self._get_source())
             else:  # iaea or gaga
                 self._set_source(True)
-                Gammora_print._title2("Source : "+str(self._get_source()))
+                Gammora_print._title2("Source : "+self._get_source())
 # + Source Type            
             if self._get_source() == True:
                 if config['SOURCE'] == 'gaga':

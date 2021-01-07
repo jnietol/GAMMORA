@@ -782,9 +782,12 @@ class GammoraSimu():
             root = os.getcwd()
             shutil.copyfile(root+'/utils/source/gaga/'+self.Beam._get_energy()+'.json', data_directory+'/'+self.Beam._get_energy()+'.json')
             shutil.copyfile(root+'/utils/source/gaga/'+self.Beam._get_energy()+'.pt', data_directory+'/'+self.Beam._get_energy()+'.pt')
-            nb_primaries=int((self.Beam._get_gaga_nb_part()/self.Beam._get_nb_index())*self.Beam._get_dose_rate()[cpi])
-            #print(self._get_gaga_nb_part()/self._get_nb_index())
-            #print(self._get_dose_rate()[cpi])
+            if self._get_split_type() == 'stat':
+                nb_primaries=int((self.Beam._get_gaga_nb_part()/self.Beam._get_nb_index())*self.Beam._get_dose_rate()[cpi])
+
+            elif self._get_split_type() == 'dyn':   # for the moment -> to fix nb part must be fix with primary.dat file (not working at the moment with gaga)
+                nb_primaries=int(self.Beam._get_gaga_nb_part()/self.Beam._get_nb_index())
+                #print(self._get_dose_rate()[cpi])
 
             if self._get_local() == True:
                 self._set_phsp_dir1(data_directory)
@@ -804,8 +807,12 @@ class GammoraSimu():
                 source8='/gate/source/MyBeam/ignoreWeight true'
                 generator='/gate/random/setEngineName MersenneTwister'
                 seed='/gate/random/setEngineSeed auto'
-                part='/gate/application/setTotalNumberOfPrimaries '+str(nb_primaries)
+                if self._get_split_type() == 'stat':
+                    part='/gate/application/setTotalNumberOfPrimaries '+str(nb_primaries)
+    
                 if self._get_split_type() == 'dyn':
+                    part='/gate/application/setTotalNumberOfPrimaries '+str(nb_primaries)
+                    #part='/gate/application/readNumberOfPrimariesInAFile '+exec_dir+'/primary.dat' # To fix (gaga do not work with read in a file, necessary to modulate dose rate)
                     line='/gate/application/readTimeSlicesIn '+exec_dir+'/myTime.timeslices'
                 
                 file.write("\n"+source1+"\n")
@@ -831,7 +838,12 @@ class GammoraSimu():
         if self.Beam._get_manual_nb_part() == True:
 
             data_phsp=pd.read_csv(root+'/utils/source/data_varian_phsp.csv')
-            total_number_of_primaries=self.Beam._get_iaea_nb_part()
+
+            if self.Beam._get_source_iaea() == True:
+                total_number_of_primaries=self.Beam._get_iaea_nb_part()
+            if self.Beam._get_source_gaga() == True:
+                total_number_of_primaries=self.Beam._get_gaga_nb_part()
+
             number_of_phsp_file=data_phsp['index'].loc[data_phsp['energy']==self.Beam._get_energy()].to_numpy()[-1]
             primaries_per_simu=total_number_of_primaries/self.Beam._get_nb_index()
 
@@ -851,11 +863,10 @@ class GammoraSimu():
                             #Gammora_print._warning('Number of particule per Simu is too important')
                             #Gammora_print._error_config('Number of particule per Simu is too important', str(self.Beam._get_nb_index()), ['Increase Number of Index', 'Define manually number of particule'])
                             number_of_primaries=int(int(nb_part_in_this_phsp/self.Beam._get_beam_nb_cpi())*self.Beam._get_dose_rate()[cpi])
-                        else: 
+                        else:
                             number_of_primaries=int(int(primaries_per_simu/self.Beam._get_beam_nb_cpi())*self.Beam._get_dose_rate()[cpi])
                     else:
                         number_of_primaries=int(int(primaries_per_simu/self.Beam._get_beam_nb_cpi())*self.Beam._get_dose_rate()[cpi])
-        
                     if cpi == self.Beam._get_beam_nb_cpi()-1:
                         file.write(str(int(number_of_primaries)))
                     else:
@@ -906,21 +917,23 @@ class GammoraSimu():
         if self._get_calmip() == True:
             dir_phsp = self._get_phsp_dir1()+'/'+self._get_simu_name()
         if self._get_local() == True:
-            dir_phsp = data_directory
-            
-        phsp_name = str(cpi)+'-'+self._get_simu_name()+'.IAEAphsp'
-         #number_of_primaries=N*recycling
+            dir_phsp = root+'/output/'+self.Study._get_study_name()+'/'+self._get_simu_name()+'/phsp/output/'+str(cpi)
+        #phsp_name = str(cpi)+'-'+self._get_simu_name()+'.IAEAphsp'
+        
+        #number_of_primaries=N*recycling
         with open(mac_directory, 'a') as file:                 
             source1='/gate/source/addSource MyBeam phaseSpace'
             file.write("\n"+source1)
         with open(mac_directory, 'a') as file:
             if self._get_calmip() == True:
                 if self._get_split_type() == 'stat':
-                    source2='/gate/source/MyBeam/addPhaseSpaceFile '+'/tmpdir/' +self._get_user()+'/input/'+self.Study._get_study_name()+'/'+self._get_simu_name()+'/phsp/output/'+str(cpi)+'/myIAEA.IAEAphsp'
+                    #source2='/gate/source/MyBeam/addPhaseSpaceFile '+'/tmpdir/' +self._get_user()+'/input/'+self.Study._get_study_name()+'/'+self._get_simu_name()+'/phsp/output/'+str(cpi)+'/myIAEA.IAEAphsp'
+                    source2='/gate/source/MyBeam/addPhaseSpaceFile '+'/tmpdir/' +self._get_user()+'/input/'+self.Study._get_study_name()+'/'+self._get_simu_name()+'/phsp/output/'+str(cpi)+'/myIAEA.root'
                 if self._get_split_type() == 'dyn':
                     source2='/gate/source/MyBeam/addPhaseSpaceFile '+'/tmpdir/' +self._get_user()+'/input/'+self.Study._get_study_name()+'/'+self._get_simu_name()+'/phsp/output/'+str(cpi)+'/myIAEA.root'
             if self._get_local() == True:
-                source2='/gate/source/MyBeam/addPhaseSpaceFile '+dir_phsp+'/'+phsp_name
+                #source2='/gate/source/MyBeam/addPhaseSpaceFile '+dir_phsp+'/'+phsp_name
+                source2='/gate/source/MyBeam/addPhaseSpaceFile '+dir_phsp+'/myIAEA.root'
             file.write("\n"+source2)
         with open(mac_directory, 'a') as file:       
             primaries='/gate/application/setTotalNumberOfPrimaries NB_PRIM'          
@@ -1080,12 +1093,18 @@ class GammoraSimu():
 
     def _create_macros_set_nb_part_reduced_from_root(self, directory, the_dir):
         root = os.getcwd()
-        shutil.copyfile(root+'/utils/template/Xset_nb_part_reduced_phsp_from_root.bashX', directory+'/set_nb_reducued_phsp.bash')
+
+        if self._get_calmip() == True:
+            shutil.copyfile(root+'/utils/template/Xset_nb_part_reduced_phsp_from_root_calmip.bashX', directory+'/set_nb_reducued_phsp.bash')
+        if self._get_local() == True:
+            shutil.copyfile(root+'/utils/template/Xset_nb_part_reduced_phsp_from_root_local.bashX', directory+'/set_nb_reducued_phsp.bash')
+
         shutil.copyfile(root+'/utils/source/read_root.py', directory+'/read_root.py')
         file=fileinput.FileInput(directory+'/set_nb_reducued_phsp.bash', inplace=1)
         for line in file:
             line=line.replace("ReCyCl", str(self.Beam._get_recycling()))
             line=line.replace("the_dir", the_dir)
+            line=line.replace("Nsimu", str(self.Beam._get_nb_index()))
             print(line)
 
 
@@ -1327,6 +1346,8 @@ class GammoraPatientSimu(GammoraSimu):
                         if i == 0:
                             self._create_primary_file(self._get_phsp_data_dir())
                     if self.Beam._get_source_gaga() == True:
+                        if i == 0:
+                            self._create_primary_file(self._get_phsp_data_dir())
                         self._add_gaga_phase_space_source(i, mac_cpi+'/main.mac', self._get_phsp_data_dir(), exec_dir)
 
 # + Start Command
@@ -1652,7 +1673,7 @@ class GammoraPatientSimu(GammoraSimu):
             if self._get_calmip() == True:
                 self._create_launcher_calmip(self._get_clinic_dir(), 'clinic')
 
-            self._create_macros_set_nb_part_reduced(self._get_clinic_dir(), self._get_input_dir())
+            self._create_macros_set_nb_part_reduced_from_root(self._get_clinic_dir(), self._get_input_dir())
 
             os.remove(self._get_clinic_mac_dir()+'/main.mac')
 
@@ -1797,6 +1818,8 @@ class GammoraManualSimu(GammoraSimu):
                         if i == 0:
                             self._create_primary_file(self._get_phsp_data_dir())
                     if self._get_source_gaga() == True:
+                        if i == 0:
+                            self._create_primary_file(self._get_phsp_data_dir())
                         self._add_gaga_phase_space_source(i, mac_cpi+'/main.mac', self._get_phsp_data_dir(), exec_dir)
 
                 self._decorate(mac_cpi+'/main.mac', 'Start Gate')
@@ -1896,7 +1919,7 @@ class GammoraManualSimu(GammoraSimu):
             if self._get_calmip() == True:
                 self._create_launcher_calmip(self._get_clinic_dir(), 'clinic')
 
-            self._create_macros_set_nb_part_reduced(self._get_clinic_dir(), self._get_input_dir())
+            self._create_macros_set_nb_part_reduced_from_root(self._get_clinic_dir(), self._get_input_dir())
         
             os.remove(self._get_clinic_mac_dir()+'/main.mac')
             print("")
@@ -2116,7 +2139,7 @@ class GammoraManualSimu(GammoraSimu):
             if self._get_calmip() == True:
                 self._create_launcher_calmip(self._get_clinic_dir(), 'clinic')
 
-            self._create_macros_set_nb_part_reduced(self._get_clinic_dir(), self._get_input_dir())
+            self._create_macros_set_nb_part_reduced_from_root(self._get_clinic_dir(), self._get_input_dir())
         
             os.remove(self._get_clinic_mac_dir()+'/main.mac')
         

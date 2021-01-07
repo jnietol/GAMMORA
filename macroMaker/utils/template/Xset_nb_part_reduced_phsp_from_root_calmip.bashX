@@ -10,8 +10,8 @@ module load python/3.6.8
 
 
 
-number_of_simulation=$(ls -1 the_dir/phsp/output/ | wc -l)
-#number_of_simulation=Nsimu
+#number_of_simulation=$(ls -1 the_dir/phsp/output/ | wc -l)
+number_of_simulation=Nsimu
 
 
 #execute script for set number of particule

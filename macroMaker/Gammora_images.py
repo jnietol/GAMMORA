@@ -28,7 +28,14 @@ class GammoraCT():
         new_origin_original.append(ct.GetOrigin()[1]*-1)
         new_origin_original.append(ct.GetOrigin()[2]*-1)   
         ct.SetOrigin(new_origin_original)
+        print('ORIGINE : ', ct.GetOrigin())
+
         self._write_original_mhd(ct)
+
+        # for rotation of image in Gate reference frame
+        bashCommand = "sed -i -e \"s/1 0 0 0 1 0 0 0 1/1 0 0 0 -1 0 0 0 -1/g\" " +self._get_mhd_ct_directory()+"_original.mhd"
+        os.system(bashCommand)
+
         voxel_array_crop, x1, y1 = self._auto_crop(voxel_array)
 
         #if crop_error == True:
@@ -52,6 +59,11 @@ class GammoraCT():
         ct_crop.SetSpacing(ct.GetSpacing())
 
         sitk.WriteImage(ct_crop, self._get_mhd_ct_directory()+'.mhd')
+        
+        # for rotation of image in Gate reference frame
+        bashCommand = "sed -i -e \"s/1 0 0 0 1 0 0 0 1/1 0 0 0 -1 0 0 0 -1/g\" " +self._get_mhd_ct_directory()+".mhd"
+        os.system(bashCommand)
+
         #else:
         #    ct2 = sitk.GetImageFromArray(voxel_array)
         #    new_origin=[]

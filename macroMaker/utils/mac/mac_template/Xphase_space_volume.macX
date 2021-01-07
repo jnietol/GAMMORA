@@ -65,10 +65,5 @@
 /gate/gaga_vol/geometry/setXLength 0.15 m
 /gate/gaga_vol/geometry/setYLength 0.001 mm
 /gate/gaga_vol/geometry/setZLength 0.15 m
-#/gate/gaga_vol/placement/setRotationAxis 1 0 0
-#/gate/gaga_vol/placement/setRotationAngle 90.0 deg
-/gate/gaga_vol/placement/setTranslation 0.0 0.0 0.0 cm
-#/gate/gaga_vol/placement/setRotationAxis 1 0 0
-#/gate/gaga_vol/placement/setRotationAngle 270.0 deg
-/gate/gaga_vol/vis/setVisible 0
+/gate/gaga_vol/vis/setVisible 1
 /gate/gaga_vol/vis/setColor red
