@@ -56,7 +56,7 @@ class GammoraManualBeam(Gammora_beam.GammoraBeam):
         config_default_scratch['MLC_FILE']=True
         config_default_scratch['PHSP_ACTOR']=True
         config_default_scratch['PATIENT_ACTOR']=True
-        config_default_scratch['PHSP_ACTOR_FILE']='iaea_make_phspR_cyl.mac'
+        config_default_scratch['PHSP_ACTOR_FILE']='root_make_phspR_cyl.mac'
         config_default_scratch['PATIENT_ACTOR_FILE']='dose_actor.mac'
         config_default_scratch['PATIENT_ACTOR_SIZE']=[300.0, 300.0, 300.0]
         config_default_scratch['PATIENT_ACTOR_RESOLUTION']=[300, 300, 300]

@@ -56,7 +56,7 @@ auto
 
 # Splitting type: Set "auto" or "stat" or "dyn" (see documentation for the splitting type, recommanded: dyn)
 =SPLIT_TYPE=
-dyn
+stat
 
 # IGNORE THIS TAG (Work in progress)
 # test bool 0 = no ; 1 = yes ;  "auto" (not working yet)
@@ -91,19 +91,19 @@ X
 
 # X1 jaw opening (float in mm). Must be < 210 ; auto 
 =X1=
-50
+100
 
 # X2 jaw opening (float in mm). Must be < 210 ; auto 
 =X2=
-50
+100
 
 # Y1 jaw opening (float in mm). Must be < 210 ; auto 
 =Y1=
-50
+100
 
 # Y2 jaw opening (float in mm). Must be < 210 ; auto 
 =Y2=
-50
+100
 
 # MLC: 
 # 0 = no mlc 
