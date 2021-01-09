@@ -57,7 +57,7 @@ The subjects of these PhDs thesis were to implement, improve, validate or use GA
 
  - This  work  was  granted  access  to  the  HPC  resources  of  [CALMIP](https://www.calmip.univ-toulouse.fr/)  supercomputing  center under the allocation 2016-P19001.
  
- - This work was supported by the French National Cancer Institute (INCa) within the253framework of the 2016 Physics Cancer Project:  STEREPID
+ - This work was supported by the French National Cancer Institute (INCa) within the framework of the 2016 Physics Cancer Project:  STEREPID
 
  
  
