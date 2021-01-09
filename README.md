@@ -1,5 +1,5 @@
 
-![gmmr](logo.png =250x)
+![gmmr](logo.png)
 # GAMMORA REPOSITORY
 
 **GAMMORA** : **GA**te **M**onte-Carlo **MO**del for **RA**diotherapy
