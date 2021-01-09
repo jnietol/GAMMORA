@@ -12,13 +12,20 @@ A full Varian TrueBeam STx Model for [Gate v9.0](https://github.com/OpenGATE/Gat
 
 
 
+## Authors
 
-Authors: **Jeremy Leste, Maxime Chauvin, Tony Younes, Sara Beilla, Luc Simon**
+Authors: **Jeremy Leste<sup>1</sup>, Maxime Chauvin<sup>1</sup>, Tony Younes<sup>1</sup>, Sara Beilla<sup>1</sup>, Luc Simon<sup>1,2</sup>**
 
-[CRCT](https://www.crct-inserm.fr/), Toulouse, France
+(1)[CRCT](https://www.crct-inserm.fr/), Toulouse, France
 
-[IUCT-Oncopole](https://www.iuct-oncopole.fr/), Toulouse, France
+(2)[IUCT-Oncopole](https://www.iuct-oncopole.fr/), Toulouse, France
 
+
+
+
+
+
+## Publications
 
 The following studies were made using GAMMORA:
 
@@ -33,8 +40,28 @@ The following studies were made using GAMMORA:
  - T. Younes, M. Chauvin, A. Delbaere, J. Labour, V. Fonteny, L. Simon, G. Fares, and L. Vieillevigne, *Towards the standardization of the absorbed dose report mode in high energy photon beams*, **Physics in Medicine & Biology** , PMB–110997 (2021, accepted, in press)
 
 
+## Thesis
 
-This repository is the stable version of GAMMORA. Please read the manual to start (this manual should be improved soon)
+The subjects of these PhDs thesis were to implement, improve, validate or use GAMMORA:
+
+
+ - Younes, T. [Methodologie pour la determination de la dose absorbee dans le cas des petits champs avec et sans heterogeneites pour des faisceaux de photons de haute energie], PhD Thesis, Universite de Toulouse.Ph.D. thesis; Universite de Toulouse; 2018
+
+ - Leste, J. Implementation and clinic application of a Monte Carlo model of an external radiotherapy linear accelerator, PhD Thesis, Universite de Toulouse. Ph.D. thesis; Universite de Toulouse; 2020
+
+ - Beilla, S. [Modelisation Monte-Carlo d’un accelerateur lineaire pour la prise en compte des densites pulmonaires dans le calcul de la dose absorbee en Radiotherapie Stereotaxique], PhD Thesis, Universite deToulouse. Ph.D. thesis; Universite de Toulouse; 2016
+
+
+
+## Acknowledgements:
+
+ - This  work  was  granted  access  to  the  HPC  resources  of  CALMIP  supercomputing  center under the allocation 2016-P19001.
+ 
+ - This work was supported by the French National Cancer Institute (INCa) within the253framework of the 2016 Physics Cancer Project:  STEREPID
+
+ 
+ 
+ This repository is the stable version of GAMMORA. Please read the manual to start (this manual should be improved soon)
 
 
 Next release will include absolute dose scaling, example with job splitting, example with target motion for interplay effect assessment and a easy to use GUI. 
