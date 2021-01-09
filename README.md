@@ -30,7 +30,7 @@ These works were made using GAMMORA:
 
  - A. Delbaere, T. Younes, and L. Vieillevigne, *On the conversion from dose-to-medium to dose-to-water in heterogeneous phantoms with Acuros XB and Monte Carlo calculations*, **Physics in Medicine and Biology** 64 (2019).
 
- - T. Younes, M. Chauvin, A. Delbaere, J. Labour, V. Fonteny, L. Simon, G. Fares, and L. Vieillevigne, *Towards the standardization of the absorbed dose report mode in high energy photon beams*, **Physics in Medicine & Biology** , PMB–110997 (accepted, in press)
+ - T. Younes, M. Chauvin, A. Delbaere, J. Labour, V. Fonteny, L. Simon, G. Fares, and L. Vieillevigne, *Towards the standardization of the absorbed dose report mode in high energy photon beams*, **Physics in Medicine & Biology** , PMB–110997 (2021, accepted, in press)
 
 
 
