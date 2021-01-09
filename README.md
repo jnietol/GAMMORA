@@ -13,7 +13,7 @@ A full Varian TrueBeam STx Model for [Gate v9.0](https://github.com/OpenGATE/Gat
 
 
 
-Authors: Jeremy Leste, Maxime Chauvin, Tony Younes, Sara Beilla, Luc Simon
+Authors: **Jeremy Leste, Maxime Chauvin, Tony Younes, Sara Beilla, Luc Simon**
 
 [CRCT](https://www.crct-inserm.fr/), Toulouse, France
 
