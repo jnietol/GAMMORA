@@ -1,5 +1,5 @@
 
-<img src="logo1.png" width="450">
+<img src="logo1.png" width="500" align="right">
 
 
 # GAMMORA REPOSITORY
