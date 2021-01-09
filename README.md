@@ -40,3 +40,12 @@ This repository is the stable version of GAMMORA. Please read the manual to star
 Next release will include absolute dose scaling, example with job splitting, example with target motion for interplay effect assessment and a easy to use GUI. 
 
 
+
+
+
+
+
+
+
+
+
