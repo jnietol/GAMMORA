@@ -20,7 +20,7 @@ Authors: **Jeremy Leste, Maxime Chauvin, Tony Younes, Sara Beilla, Luc Simon**
 [IUCT-Oncopole](https://www.iuct-oncopole.fr/), Toulouse, France
 
 
-These works were made using GAMMORA:
+The following studies were made using GAMMORA:
 
  - S. Beilla, T. Younes, L. Vieillevigne, M. Bardies, X. Franceries, and L. Simon, *Monte-Carlo dose calculation in presence of low-density media: Application to lung SBRT treated during DIBH*, **Physica Medica** 41, 46–52 (2017).
 
