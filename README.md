@@ -2,7 +2,7 @@
 
 **GAMMORA** : **GA**te **M**onte-Carlo **MO**del for **RA**diotherapy
 
-This is the first version of GAMMORA.  
+ 
 
 A full Varian TrueBeam STx Model for [Gate v9.0](https://github.com/OpenGATE/Gate) with the following features:
 - conversion DICOM RT PLAN to GATE macros (including dynamic plans such as VMAT, DCA...)
@@ -37,6 +37,6 @@ These works were made using GAMMORA:
 This repository is the stable version of GAMMORA. Please read the manual to start (this manual should be improved soon)
 
 
-Next release will include absolute dose scaling, example with job splitting and example with target motion for interplay effect assessment. 
+Next release will include absolute dose scaling, example with job splitting, example with target motion for interplay effect assessment and a easy to use GUI. 
 
 
