@@ -1,3 +1,5 @@
+
+![Tux, the Linux mascot](logo.png)
 # GAMMORA REPOSITORY
 
 **GAMMORA** : **GA**te **M**onte-Carlo **MO**del for **RA**diotherapy
