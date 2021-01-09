@@ -47,9 +47,9 @@ The following studies were made using GAMMORA:
 The subjects of these PhDs thesis were to implement, improve, validate or use GAMMORA:
 
 
- - Younes, T. [Methodologie pour la determination de la dose absorbee dans le cas des petits champs avec et sans heterogeneites pour des faisceaux de photons de haute energie], PhD Thesis, Universite de Toulouse.Ph.D. thesis; Universite de Toulouse; 2018
+- Leste, J. Implementation and clinic application of a Monte Carlo model of an external radiotherapy linear accelerator, PhD Thesis, Universite de Toulouse. Ph.D. thesis; Universite de Toulouse; 2020
 
- - Leste, J. Implementation and clinic application of a Monte Carlo model of an external radiotherapy linear accelerator, PhD Thesis, Universite de Toulouse. Ph.D. thesis; Universite de Toulouse; 2020
+- Younes, T. [Methodologie pour la determination de la dose absorbee dans le cas des petits champs avec et sans heterogeneites pour des faisceaux de photons de haute energie], PhD Thesis, Universite de Toulouse.Ph.D. thesis; Universite de Toulouse; 2018
 
  - Beilla, S. [Modelisation Monte-Carlo d’un accelerateur lineaire pour la prise en compte des densites pulmonaires dans le calcul de la dose absorbee en Radiotherapie Stereotaxique], PhD Thesis, Universite deToulouse. Ph.D. thesis; Universite de Toulouse; 2016
 
