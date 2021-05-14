@@ -18,7 +18,15 @@ A full Varian TrueBeam STx Model for [Gate v9.0](https://github.com/OpenGATE/Gat
 
 ## Authors
 
-Authors: **Jeremy Leste<sup>1</sup>, Maxime Chauvin<sup>1</sup>, Tony Younes<sup>1</sup>, Sara Beilla<sup>1</sup>, Luc Simon<sup>1,2</sup>**
+**Jeremy Leste<sup>1</sup>, Maxime Chauvin<sup>1</sup>, Tony Younes<sup>1</sup>, Sara Beilla<sup>1</sup>, Luc Simon<sup>1,2</sup>**
+
+(1)[CRCT](https://www.crct-inserm.fr/), Toulouse, France
+
+(2)[IUCT-Oncopole](https://www.iuct-oncopole.fr/), Toulouse, France
+
+## Validation
+
+**Jeremy Leste<sup>1</sup>, Alexia Delbaere<sup>1</sup>, Imene Medjahed<sup>2</sup>, Maxime Chauvin<sup>1</sup>, Tony Younes<sup>1</sup>, Sara Beilla<sup>1</sup>, Luc Simon<sup>1,2</sup>**
 
 (1)[CRCT](https://www.crct-inserm.fr/), Toulouse, France
 
@@ -28,20 +36,21 @@ Authors: **Jeremy Leste<sup>1</sup>, Maxime Chauvin<sup>1</sup>, Tony Younes<sup
 
 
 
-
 ## Publications
 
 The following studies were made using GAMMORA:
+ - J. Leste, I. Medjahed, M. Chauvin, T. Younes, L. Vieillevigne, R. Ferrand, X. Franceries, M. Bardies, L. Simon. *A study of the interplay effect in Radiation Therapy using a Monte-Carlo model*, **Physica Medica**, in press
 
- - S. Beilla, T. Younes, L. Vieillevigne, M. Bardies, X. Franceries, and L. Simon, *Monte-Carlo dose calculation in presence of low-density media: Application to lung SBRT treated during DIBH*, **Physica Medica** 41, 46–52 (2017).
+- T. Younes, M. Chauvin, A. Delbaere, J. Labour, V. Fonteny, L. Simon, G. Fares, and L. Vieillevigne, *Towards the standardization of the absorbed dose report mode in high energy photon beams*, **Physics in Medicine and Biology** 66 (2021).
 
- - R. Barbeiro, L. Parent, L. Vieillevigne, R. Ferrand, and X. Franceries, *Dosimetric performance of continuous EPID imaging in stereotactic treatment conditions*, **Physica Medica** 78, 117–122 (2020)
-
- - J. Leste, T. Younes, M. Chauvin, L. Vieillevigne, M. Bardies, X. Franceries, J. Nalis and L. Simon, *36 Monte Carlo simulation of absorbed dose distribution for electron beam using GATE/GEANT4*, **Physica Medica** 56, 21 (2018)
+- R. Barbeiro, L. Parent, L. Vieillevigne, R. Ferrand, and X. Franceries, *Dosimetric performance of continuous EPID imaging in stereotactic treatment conditions*, **Physica Medica** 78, 117–122 (2020)
 
  - A. Delbaere, T. Younes, and L. Vieillevigne, *On the conversion from dose-to-medium to dose-to-water in heterogeneous phantoms with Acuros XB and Monte Carlo calculations*, **Physics in Medicine and Biology** 64 (2019).
 
- - T. Younes, M. Chauvin, A. Delbaere, J. Labour, V. Fonteny, L. Simon, G. Fares, and L. Vieillevigne, *Towards the standardization of the absorbed dose report mode in high energy photon beams*, **Physics in Medicine & Biology** , PMB–110997 (2021, accepted, in press)
+- J. Leste, T. Younes, M. Chauvin, L. Vieillevigne, M. Bardies, X. Franceries, J. Nalis and L. Simon, *36 Monte Carlo simulation of absorbed dose distribution for electron beam using GATE/GEANT4*, **Physica Medica** 56, 21 (2018)
+
+ - S. Beilla, T. Younes, L. Vieillevigne, M. Bardies, X. Franceries, and L. Simon, *Monte-Carlo dose calculation in presence of low-density media: Application to lung SBRT treated during DIBH*, **Physica Medica** 41, 46–52 (2017).
+
 
 
 ## Thesis
@@ -59,7 +68,7 @@ The subjects of these PhDs thesis were to implement, improve, validate or use GA
 
 ## Acknowledgements:
 
- - This  work  was  granted  access  to  the  HPC  resources  of  [CALMIP](https://www.calmip.univ-toulouse.fr/)  supercomputing  center under the allocation 2016-P19001.
+ - This  work  is  granted  access  to  the  HPC  resources  of  [CALMIP](https://www.calmip.univ-toulouse.fr/)  supercomputing  center under the allocation 2016-P19001.
  
  - This work was supported by the French National Cancer Institute (INCa) within the framework of the 2016 Physics Cancer Project:  STEREPID
 
