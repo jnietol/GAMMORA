@@ -39,7 +39,7 @@ A full Varian TrueBeam STx Model for [Gate v9.0](https://github.com/OpenGATE/Gat
 ## Publications
 
 The following studies were made using GAMMORA:
- - J. Leste, I. Medjahed, M. Chauvin, T. Younes, L. Vieillevigne, R. Ferrand, X. Franceries, M. Bardies, L. Simon. *A study of the interplay effect in Radiation Therapy using a Monte-Carlo model*, **Physica Medica**, in press
+ - J. Leste, I. Medjahed, M. Chauvin, T. Younes, L. Vieillevigne, R. Ferrand, X. Franceries, M. Bardies, L. Simon. *[A study of the interplay effect in Radiation Therapy using a Monte-Carlo model](https://doi.org/10.1016/j.ejmp.2021.05.019)*, **Physica Medica**, Volume 87, 73-82 (2021)  
 
 - T. Younes, M. Chauvin, A. Delbaere, J. Labour, V. Fonteny, L. Simon, G. Fares, and L. Vieillevigne, *Towards the standardization of the absorbed dose report mode in high energy photon beams*, **Physics in Medicine and Biology** 66 (2021).
 
