@@ -38,6 +38,10 @@ A full Varian TrueBeam STx Model for [Gate v9.0](https://github.com/OpenGATE/Gat
 
 ## Publications
 
+Reference paper:
+ - Jeremy Leste, Tony Younes, Maxime Chauvin, Xavier Franceries, Alexia Delbaere, Laure Vieillevigne, Regis Ferrand, Manuel Bardies, Luc Simon, “Technical note: GAMMORA, a free, open-source, and validated GATE-based model for Monte-Carlo simulations of the Varian TrueBeam”, **Physica Medica** 89 (2021) 211–218, https://doi.org/10.1016/j.ejmp.2021.07.037
+
+
 The following studies were made using GAMMORA:
  - J. Leste, I. Medjahed, M. Chauvin, T. Younes, L. Vieillevigne, R. Ferrand, X. Franceries, M. Bardies, L. Simon. *[A study of the interplay effect in Radiation Therapy using a Monte-Carlo model](https://doi.org/10.1016/j.ejmp.2021.05.019)*, **Physica Medica**, Volume 87, 73-82 (2021)  
 
