@@ -39,11 +39,10 @@ A full Varian TrueBeam STx Model for [Gate v9.0](https://github.com/OpenGATE/Gat
 ## Publications
 
 Reference paper:
- - Jeremy Leste, Tony Younes, Maxime Chauvin, Xavier Franceries, Alexia Delbaere, Laure Vieillevigne, Regis Ferrand, Manuel Bardies, Luc Simon, “Technical note: GAMMORA, a free, open-source, and validated GATE-based model for Monte-Carlo simulations of the Varian TrueBeam”, **Physica Medica** 89 (2021) 211–218, https://doi.org/10.1016/j.ejmp.2021.07.037
-
+ - Jeremy Leste, Tony Younes, Maxime Chauvin, Xavier Franceries, Alexia Delbaere, Laure Vieillevigne, Regis Ferrand, Manuel Bardies, Luc Simon, *[Technical note: GAMMORA, a free, open-source, and validated GATE-based model for Monte-Carlo simulations of the Varian TrueBeam](https://doi.org/10.1016/j.ejmp.2021.07.037)*, **Physica Medica** 89 (2021) 211–218, 
 
 The following studies were made using GAMMORA:
- - J. Leste, I. Medjahed, M. Chauvin, T. Younes, L. Vieillevigne, R. Ferrand, X. Franceries, M. Bardies, L. Simon. *[A study of the interplay effect in Radiation Therapy using a Monte-Carlo model](https://doi.org/10.1016/j.ejmp.2021.05.019)*, **Physica Medica**, Volume 87, 73-82 (2021)  
+ - J. Leste, I. Medjahed, M. Chauvin, T. Younes, L. Vieillevigne, R. Ferrand, X. Franceries, M. Bardies, L. Simon. *[A study of the interplay effect in Radiation Therapy using a Monte-Carlo model](https://doi.org/10.1016/j.ejmp.2021.05.019)*, **Physica Medica** 87, 73-82 (2021)  
 
 - T. Younes, M. Chauvin, A. Delbaere, J. Labour, V. Fonteny, L. Simon, G. Fares, and L. Vieillevigne, *Towards the standardization of the absorbed dose report mode in high energy photon beams*, **Physics in Medicine and Biology** 66 (2021).
 
@@ -57,16 +56,16 @@ The following studies were made using GAMMORA:
 
 
 
-## Thesis
+## PhD Thesis
 
-The subjects of these PhDs thesis were to implement, improve, validate or use GAMMORA:
+The subjects of these PhD thesis were to implement, improve, validate or use GAMMORA:
 
 
-- Leste, J. Implementation and clinic application of a Monte Carlo model of an external radiotherapy linear accelerator, PhD Thesis, Universite de Toulouse. Ph.D. thesis; Universite de Toulouse; 2020
+- J. Leste [Implementation and clinic application of a Monte Carlo model of an external radiotherapy linear accelerator](https://tel.archives-ouvertes.fr/tel-03209752/document), PhD Thesis, Universite de Toulouse. Ph.D. thesis; Universite de Toulouse; 2020
 
-- Younes, T. [Methodologie pour la determination de la dose absorbee dans le cas des petits champs avec et sans heterogeneites pour des faisceaux de photons de haute energie], PhD Thesis, Universite de Toulouse.Ph.D. thesis; Universite de Toulouse; 2018
+- T. Younes [Methodologie pour la determination de la dose absorbee dans le cas des petits champs avec et sans heterogeneites pour des faisceaux de photons de haute energie](https://tel.archives-ouvertes.fr/tel-02484750/document), PhD Thesis, Universite de Toulouse.Ph.D. thesis; Universite de Toulouse; 2018
 
- - Beilla, S. [Modelisation Monte-Carlo d’un accelerateur lineaire pour la prise en compte des densites pulmonaires dans le calcul de la dose absorbee en Radiotherapie Stereotaxique], PhD Thesis, Universite deToulouse. Ph.D. thesis; Universite de Toulouse; 2016
+ - S. Beilla [Modelisation Monte-Carlo d’un accelerateur lineaire pour la prise en compte des densites pulmonaires dans le calcul de la dose absorbee en Radiotherapie Stereotaxique](https://hal.archives-ouvertes.fr/tel-01383148/file/THESE_BEILLA_SARA_2016_nv.pdf), PhD Thesis, Universite deToulouse. Ph.D. thesis; Universite de Toulouse; 2016
 
 
 
