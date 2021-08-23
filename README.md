@@ -13,7 +13,7 @@ A full Varian TrueBeam STx Model for [Gate v9.0](https://github.com/OpenGATE/Gat
 - the particle gun is a *GAN* (neural network) trained using the data provided by [myVarian](https://www.myvarian.com/) (i.e. IAEAphsp files based on [Constantin *et al.*](https://pubmed.ncbi.nlm.nih.gov/21858999/)) . These GANs are created using [gaga](https://github.com/dsarrut/gaga)
 - full geometry (MLC, jaws...). As the real geometry is confidential, the proposed model is slightly different than the real machine (but same dosmetric properties) 
 
-
+Please, read the [user guide](https://github.com/uhqd/GAMMORA/blob/main/doc/userGuide/GAMMORA_User_guide.pdf) for installation, getting started and simple examples. 
 
 
 ## Authors
@@ -74,10 +74,9 @@ The subjects of these PhD thesis were to implement, improve, validate or use GAM
  - This  work  is  granted  access  to  the  HPC  resources  of  [CALMIP](https://www.calmip.univ-toulouse.fr/)  supercomputing  center under the allocation 2016-P19001.
  
  - This work was supported by the French National Cancer Institute (INCa) within the framework of the 2016 Physics Cancer Project:  STEREPID
-
  
  
- This repository is the stable version of GAMMORA. Please read the manual to start (this manual should be improved soon)
+ This repository is the last version of GAMMORA. Please read the [user guide](https://github.com/uhqd/GAMMORA/blob/main/doc/userGuide/GAMMORA_User_guide.pdf) to start (this manual should be improved soon).
 
 
 Next release will include absolute dose scaling, example with job splitting, example with target motion for interplay effect assessment and a easy to use GUI. 
