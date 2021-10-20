@@ -58,7 +58,12 @@ class GammoraStudy():
                 
                 # list RT plan for patient
                 list_rt_plan = glob.glob(root+"/input/patient/"+study_name+"/dicom/RP*")
-
+     
+                #create a images directory                
+                mypath=root+"/input/patient/"+study_name+"/images"
+                if os.path.isdir(mypath) != True:
+                    os.mkdir(mypath)
+ 
                 # check if an RT plan exist if not a==1
                 if len(list_rt_plan) >= 1:
 
