@@ -18,4 +18,7 @@ mv makeMLC makeDynaMLC bin/
 
 mv bin src macroMaker/utils/C/
 
-echo CONGRATULATIONS...configuration ok
+echo CONGRATULATIONS...configuration ok!
+
+
+
