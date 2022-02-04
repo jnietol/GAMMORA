@@ -136,10 +136,12 @@ auto
 
 # PHSP ACTOR is to store output particles from the HEAD SIMULATION 
 # Set 0 = no phsp actor 
-# auto or 1 = default phsp actor: utils/mac/actor/iaea_make_phspR_cyl.mac 
+# auto or 1 = default phsp actor: utils/mac/actor/iaea_make_phspR_cyl.mac (a root format actor)
 # for your own actor definition  <my_actor>.mac" (file must be in utils/mac/actor/) 
 =PHSP_ACTOR=
 auto
+# FOR A IAEAphsp phsp actor choose : 
+#iaea_make_phspR_cyl.mac
 
 # PATIENT ACTOR is to store results from the PATIENT SIMULATION 
 # Set 0 = no patient actor 
