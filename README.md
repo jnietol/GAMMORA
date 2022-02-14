@@ -13,7 +13,7 @@ A full Varian TrueBeam STx Model for [Gate v9.0](https://github.com/OpenGATE/Gat
 - the particle gun is a *GAN* (neural network) trained using the data provided by [myVarian](https://www.myvarian.com/) (i.e. IAEAphsp files based on [Constantin *et al.*](https://pubmed.ncbi.nlm.nih.gov/21858999/)) . These GANs are created using [gaga](https://github.com/dsarrut/gaga)
 - full geometry (MLC, jaws...). As the real geometry is confidential, the proposed model is slightly different than the real machine (but same dosmetric properties) 
 
-Please, read the [user guide](https://github.com/uhqd/GAMMORA/blob/main/doc/userGuide/GAMMORA_User_guide.pdf) for installation, getting started and simple examples. 
+Please, read the [user guide](https://github.com/uhqd/GAMMORA/blob/main/doc/userGuide/GAMMORA_USERGuide2__noVM_.pdf) for installation, getting started and simple examples. 
 
 
 ## Authors
