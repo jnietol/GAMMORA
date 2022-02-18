@@ -956,7 +956,7 @@ class GammoraSimu():
 
         with open(data_directory+'/myTime.timeslices', 'a') as file:
             file.write("Time s"+"\n")
-            for i in range(0, self.Beam._get_beam_nb_cpi()+2):
+            for i in range(0, self.Beam._get_beam_nb_cpi()+1):
                 file.write(str(float(i))+"\n")
             #file.write("\n")
 
